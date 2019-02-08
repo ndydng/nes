@@ -50,10 +50,10 @@ static class Magics {
 |----|---------|----------------|-------------|----------|
 | 1 | %x blah | None | "blah" |  |
 | 2| %x | None | "" | |
-| 3| %%x | None | "" | "" | INVALID |
-| 4| %%x blah | None | "" | "blah" | INVALID |
+| 3| %%x | None | "" | INVALID |
+| 4| %%x blah | None | "blah" | INVALID |
 | 5| %%x </br> blah | "blah | "" | |
-| 6| %x blah </br> cellBlah | "cellBlah" | "blah" | |
+| 6| %%x blah </br> cellBlah | "cellBlah" | "blah" | |
 | 7| %x [space] | None | "" | |
 
 ## Parsing util
